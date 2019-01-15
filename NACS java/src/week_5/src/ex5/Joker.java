@@ -1,4 +1,4 @@
-package exercise.week5.ex5;
+package ex5;
 
 public class Joker implements Villain {
 

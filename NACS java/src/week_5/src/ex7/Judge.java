@@ -1,4 +1,4 @@
-package exercise.week5.ex7;
+package ex7;
 
 public class Judge {
 

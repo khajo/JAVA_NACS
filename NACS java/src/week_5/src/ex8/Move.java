@@ -1,4 +1,4 @@
-package exercise.week5.ex8;
+package ex8;
 
 public interface Move {
 

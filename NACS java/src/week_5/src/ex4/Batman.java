@@ -1,6 +1,7 @@
-package exercise.week5.ex4;
+package ex4;
 
-import exercise.week5.ex5.Villain;
+
+import ex5.Villain;
 
 public class Batman implements Superhero {
 
