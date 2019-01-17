@@ -1,7 +1,7 @@
 package week_9.ex_2;
 
 
-import Week_4.ex9.FileReader;
+import ex9.FileReader;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

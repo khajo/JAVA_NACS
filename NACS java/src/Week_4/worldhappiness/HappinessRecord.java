@@ -1,4 +1,4 @@
-package Week_4.worldhappiness;
+package worldhappiness;
 
 public class HappinessRecord {
 

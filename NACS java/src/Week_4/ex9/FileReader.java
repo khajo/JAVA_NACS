@@ -1,4 +1,4 @@
-package Week_4.ex9;
+package ex9;
 
 import java.io.IOException;
 import java.net.URI;

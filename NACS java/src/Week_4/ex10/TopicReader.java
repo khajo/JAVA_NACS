@@ -1,6 +1,7 @@
-package Week_4.ex10;
+package ex10;
 
-import Week_4.ex9.FileReader;
+
+import ex9.FileReader;
 import exercise.week4.ex7.Topic;
 
 

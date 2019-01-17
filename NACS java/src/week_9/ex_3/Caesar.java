@@ -1,63 +1,38 @@
 package week_9.ex_3;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 public class Caesar {
 
-    public String caesar(String plaintext, Integer key) {
-
-        return getStringStream(plaintext, key);
-    }
-
-
-    public String getStringStream(String plaintext, Integer key) {
-        List<String> splited = Arrays.asList(plaintext.split(""));
-
-        return splited.stream()
-                .map(e -> isAlphapet(e, key))
+    public String encrypt(String plaintext, Integer key) {
+        return Stream.of(plaintext.split(""))
+                .map(e -> encryptLetter(e, key))
                 .collect(Collectors.joining());
     }
 
-    private String isAlphapet(String letter, Integer key) {
-        Integer num = (int) letter.toLowerCase().charAt(0);
-        if (Character.isAlphabetic(num)) {
-            return isRight(letter, getNextLetter(letter, key));
+    private String encryptLetter(String letter, Integer key) {
+        Integer num = (int) letter.charAt(0);
+        if (!Character.isAlphabetic(num)) {
+            return letter;
         }
-        return letter;
+        return shift(num, key);
     }
 
-
-    public String isRight(String expected, String letter) {
-
-        if (expected.equals(expected.toLowerCase())) {
-            return letter.toLowerCase();
-        }
-
-        return letter.toUpperCase();
-    }
-
-    public String getNextLetter(String letter, Integer key) {
-        List<String> letters = Arrays.asList(letter);
-        String collect = letters.stream()
-                .map(e -> e.toLowerCase())
-                .map(e -> (int) e.charAt(0))
-                .filter(e -> e > 97 && e < 122)
-                .map(e -> e + key)
-                .map(e -> letterLogic(e))
-                .map(e -> Character.toString((char) (int) e))
-                .collect(Collectors.joining());
-        return collect;
-    }
-
-
-    private Integer letterLogic(Integer number) {
+    private String shift(Integer number, Integer key) {
+        boolean wasUppercase = Character.isUpperCase(number);
+        number = Character.toLowerCase(number);
+        number += key;
         if (number > 122) {
-            return (number % 122) + 96;
+            number = (number % 122) + 96;
         }
-        return number;
+        if (wasUppercase) {
+            number = Character.toUpperCase(number);
+        }
+        return Character.toString((char) number.intValue());
     }
+
+
 
 }

@@ -1,7 +1,8 @@
-package Week_4.worldhappiness;
+package worldhappiness;
 
-import Week_4.ex9.FileReader;
-;
+
+
+import ex9.FileReader;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,7 +19,7 @@ public class HappinessRecordReader {
     }
 
     private List<String> getLines() {
-        return reader.getlines("exercise/week4/worldhappiness/world-happiness-2017.csv");
+        return reader.getlines("Week_4/worldhappiness/world-happiness-2017.csv");
     }
 
     private List<HappinessRecord> toHappinessRecords(List<String> lines) {

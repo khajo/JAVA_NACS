@@ -1,4 +1,4 @@
-package Week_4.ex10;
+package ex10;
 
 import exercise.week4.ex7.Topic;
 

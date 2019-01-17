@@ -1,17 +1,13 @@
 package week_9.ex_3;
 
-import org.junit.jupiter.api.Test;
 
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 //class CaesarTest {
-//    Caesar caesar = new Caesar();
+//    Caesar encrypt = new Caesar();
 //    @Test
-//    void caesar() {
+//    void encrypt() {
 //        String expected = "ifmmp";
-//        List< Integer> actule = caesar.caesar("z", 0);
+//        List< Integer> actule = encrypt.encrypt("z", 0);
 //        System.out.println(actule);
 //
 //    }

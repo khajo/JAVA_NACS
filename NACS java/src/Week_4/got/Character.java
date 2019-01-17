@@ -1,4 +1,4 @@
-package Week_4.got;
+package got;
 
 public class Character {
 

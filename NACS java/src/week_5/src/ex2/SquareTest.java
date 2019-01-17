@@ -1,9 +1,9 @@
 package ex2;
 
 import ex1.Shape;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SquareTest {
 
@@ -12,9 +12,9 @@ class SquareTest {
         String expected = "square";
 
         Square square = new Square();
-        assertEquals(expected, square.getName());
+        Assertions.assertEquals(expected, square.getName());
 
         Shape shape = new Square();
-        assertEquals(expected, shape.getName());
+        Assertions.assertEquals(expected, shape.getName());
     }
 }

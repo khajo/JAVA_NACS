@@ -1,6 +1,6 @@
-package Week_4.ex9;
+package ex9;
 
-import Week_4.ex9.FileReader;
+
 
 import java.util.List;
 

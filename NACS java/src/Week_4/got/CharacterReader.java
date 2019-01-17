@@ -1,7 +1,9 @@
-package Week_4.got;
+package got;
 
-import Week_4.ex9.FileReader;
 
+
+
+import ex9.FileReader;
 
 import java.util.ArrayList;
 import java.util.Arrays;
