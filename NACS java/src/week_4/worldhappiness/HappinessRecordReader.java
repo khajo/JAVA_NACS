@@ -19,7 +19,7 @@ public class HappinessRecordReader {
     }
 
     private List<String> getLines() {
-        return reader.getlines("Week_4/worldhappiness/world-happiness-2017.csv");
+        return reader.getlines("/worldhappiness/world-happiness-2017.csv");
     }
 
     private List<HappinessRecord> toHappinessRecords(List<String> lines) {

@@ -10,7 +10,7 @@ import java.util.Comparator;
 public class HappinessApplication {
     public static void main(String[] args) {
 
-        new FileReader().asStream("Week_4/worldhappiness/world-happiness-2017.csv")
+        new FileReader().asStream("/worldhappiness/world-happiness-2017.csv")
                 .skip(1)
                 .map(e -> e.split(";"))
                 .map(e -> Arrays.asList(e))
