@@ -34,7 +34,7 @@ public class GotApplication {
     
     private static List<Character> getCharacters() {
         CharacterReader characterReader = new CharacterReader();
-        return characterReader.asList("exercise/week4/got/got-characters.csv");
+        return characterReader.asList("week_4/got/got-characters.csv");
     }
 
     private static List<Character> getDead(List<Character> characters) {
