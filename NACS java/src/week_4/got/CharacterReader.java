@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class CharacterReader {
+public class    CharacterReader {
 
     private FileReader reader = new FileReader();
 

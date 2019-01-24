@@ -51,7 +51,7 @@ public class StreamsApplication {
 }
 
 
-//    Create the StreamsApplication class. Write the next points of this exercise inside the main method.
+//    Create the StreamsApplication class. Write the next points of this exercise inside the Main method.
 //       1. Create a list of the first twenty numbers. Use a loop for this, please.
 //       2.Create a list of the even numbers. Display it.
 //       3.Create a list of the odd numbers. Display it.
