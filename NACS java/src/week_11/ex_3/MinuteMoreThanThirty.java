@@ -1,0 +1,17 @@
+package week_11.ex_3;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MinuteMoreThanThirty implements Converter {
+
+    @Override
+    public List<Integer> getTime(Integer houre, Integer minute) {
+        List<Integer> timeList = new ArrayList<>();
+        if (minute > 30) {
+            timeList.add(houre + 1);
+            timeList.add(60 - minute);
+        }
+        return timeList;
+    }
+}

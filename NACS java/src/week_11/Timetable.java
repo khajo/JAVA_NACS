@@ -97,6 +97,27 @@ public class Timetable {
         }
 
 
+        Boolean isleabYear = inHotel.toLocalDate().isLeapYear();
+        DayOfWeek getday = inHotel.getDayOfWeek();
+        System.out.println(getday);
+        if (getday.equals(DayOfWeek.valueOf("THURSDAY")) || getday.equals(DayOfWeek.valueOf("SUNDAY")) ||
+                isleabYear && getday.equals(DayOfWeek.valueOf("SATURDAY"))) {
+            System.out.println("lucky");
+        }
+        else {
+            System.out.println("Unlucky");
+        }
+
+        LocalDateTime after1Week = inHotel.plusWeeks(1);
+        System.out.println(after1Week);
+        ZonedDateTime inLondonoAfterOneWeek = after1Week.atZone(london);
+        ZonedDateTime inTokyoAfteoneWeek = inLondonoAfterOneWeek.withZoneSameInstant(tokyo);
+        System.out.println(inTokyoAfteoneWeek);
+        Duration timeTokyo = Duration.between(inTokyoAfteoneWeek.toLocalTime(),LocalTime.parse("18:30") );
+
+
+
+
 
     }
 
