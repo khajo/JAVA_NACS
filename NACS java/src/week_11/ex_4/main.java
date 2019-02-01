@@ -1,10 +1,20 @@
 package week_11.ex_4;
 
+import java.time.LocalDate;
+import java.time.Month;
 import java.util.Arrays;
 import java.util.List;
 
 public class main {
     public static void main(String[] args) {
+
+        LocalDate localDate = LocalDate.parse("2018-06-21");
+        int year = localDate.getYear();
+        Boolean isYear = localDate.isLeapYear();
+        System.out.println(year);
+        System.out.println(isYear);
+        Integer mount = localDate.getMonthValue();
+        System.out.println(mount);
 
         Checking checking = new Checking();
 //        System.out.println(checking.check("Pale", "lapes"));
